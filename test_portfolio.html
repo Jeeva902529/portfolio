@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <style>
+                /* Additional CSS styles for creativity */
+                .fade-in {
+        animation: fade-in 1s ease-in-out;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1em;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav {
+        background-color: #8d4b55;
+        padding: 1em;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 1em;
+    }
+
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #3e8e41;
+    }
+
+    .btn:active {
+        background-color: #3e8e41;
+        transform: translateY(2px);
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+
+    /* Additional CSS styles */
+    .profile-image-container {
+        text-align: center;
+    }
+
+    .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #0066cc;
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .download-button:hover {
+        background-color: #0052a3;
+    }
+
+    .download-button:active {
+        background-color: #0052a3;
+        transform: translateY(2px);
+        box-shadow: 0 0 0 0 rgba(0,0,0,0);
+    }
+
+    .blog-section {
+        padding: 2em;
+        color: #fff;
+        text-align: center;
+    }
+
+    .blog-section h2 {
+        margin-bottom: 1em;
+    }
+
+    .blog-section p {
+        margin-bottom: 1em;
+    }
+
+    .blog-section h3 {
+        margin-bottom: 0.5em;
+    }
+
+    .change-color {
+        color: #ffcc00;
+    }
+
+    /* New CSS styles for the contact section */
+    #contact {
+        background-color: #f9f9f9;
+        padding: 50px;
+        text-align: center;
+    }
+
+    #contact h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    #contact p {
+        color: #666;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #contact strong {
+        color: black;
+    }
+
+    #contact img {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    #contact img:hover {
+        transform: scale(1.1);
+    }
+
+    .over
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .profile-image
+    {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .hello
+    {
+        font-size: 3rem;
+    }
+    .name
+    {
+        font-size: 5rem;
+    }
+    body {
+                    background-color: #f2f2f2;
+                    font-family: 'Arial', sans-serif;
+                }
+
+                header {
+                    background-color: #ffcc00;
+                    color: #333;
+                    padding: 1em;
+                    text-align: center;
+                }
+
+                header h1 {
+                    font-size: 3rem;
+                    margin: 0;
+                }
+
+                header p {
+                    font-size: 1.5rem;
+                    margin: 0;
+                }
+
+                nav {
+                    background-color: #ff6699;
+                    padding: 1em;
+                    text-align: center;
+                }
+
+                nav ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                nav li {
+                    display: inline;
+                    margin-right: 1em;
+                }
+
+                nav a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    padding: 0.5em 1em;
+                    border-radius: 5px;
+                    transition: background-color 0.3s ease;
+                }
+
+                nav a:hover {
+                    background-color: #ff3366;
+                }
+
+                main {
+                    padding: 2em;
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+                section {
+                    margin-bottom: 2em;
+                }
+
+                h2 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1em;
+                    color: #ff3366;
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                    margin-bottom: 0.5em;
+                    color: #333;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin-bottom: 1em;
+                    <style>
+                }
+
+                .profile-image-container {
+                    text-align: center;
+                    margin-bottom: 2em;
+                }
+
+                .profile-image {
+                    height: 300px;
+                    width: 300px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 5px solid #ff3366;
+                }
+
+                .about-content {
+                    line-height: 1.5rem;
+                }
+
+                .portfolio-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin-bottom: 2em;
+                    background-color: #ffcc00;
+                    padding: 1em;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    transform-style: preserve-3d;
+                    animation: rotateAnimation 5s infinite linear;
+                }
+
+                .portfolio-item img {
+                    width: 300px;
+                    height: 300px;
+                    object-fit: cover;
+    }
+
+    /* New CSS styles for the portfolio section */
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .portfolio-item img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-item h3 {
+        font-size: 2rem;
+        margin-bottom: 0.5em;
+    }
+
+    .portfolio-item p {
+        margin-bottom: 1em;
+    }
+
+    /* New CSS styles for the contact section */
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .contact-info a {
+        margin: 0 10px;
+    }
+
+    .contact-info img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-info img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Additional CSS styles for creativity */
+    body {
+        background-color: #f2f2f2;
+        font-family: 'Arial', sans-serif;
+    }
+
+    header {
+        background-color: #ffcc00;
+        color: #333;
+        padding: 1em;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    header p {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    nav {
+        background-color: #ff6699;
+        padding: 1em;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: #ff3366;
+    }
+
+    main {
+        padding: 2em;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+        margin-bottom: 2em;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1em;
+        color: #ff3366;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5em;
+        color: #333;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+        color: #666;
+    }
+
+    .profile-image-container {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .profile-image {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #ff3366;
+    }
+
+    .about-content {
+        line-height: 1.5rem;
+    }
+
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2em;
+        background-color: #ffcc00;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-item img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-item h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5em;
+        color: #333;
+    }
+
+    .portfolio-item p {
+        margin-bottom: 1em;
+        color: #666;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .contact-info a {
+        margin: 0 10px;
+    }
+
+    .contact-info img {
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-info img:hover {
+        transform: scale(1.1);
+    }
+    .proj
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .pro
+    {
+        flex: 1;
+        padding: 0.2rem;
+        border: solid 0.1rem black;
+        border-radius: 1rem;
+    }
+    .certi
+    {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+
+    }
+    .cer
+    {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: solid 0.1rem black;
+    }
+    .cer img
+    {
+        height: 300px;
+        width: 400px;
+        onject-fit: cover;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1 style="color: #ff3366;">HIRTHICK T</h1>
+    <p style="color: #333;">Web Designer</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="#about" onclick="showSection('about')" style="background-color: #ff6699;">About Me</a></li>
+        <li><a href="#resume" onclick="showSection('resume')" style="background-color: #ff6699;">Resume</a></li>
+        <li><a href="#portfolio" onclick="showSection('portfolio')" style="background-color: #ff6699;">Projects</a></li>
+        <li><a href="#education" onclick="showSection('education')" style="background-color: #ff6699;">Education</a></li>
+        <li><a href="#certificate" onclick="showSection('certificate')" style="background-color: #ff6699;">Certificate</a></li>
+        <li><a href="#contact" onclick="showSection('contact')" style="background-color: #ff6699;">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="over">
+            <div class="about-content">
+                <h5 class="hello" style="color: #ff3366;">Hello, I'm</h5>
+                <h1 class="name" style="color: #333;">HIRTHICK</h1>
+            </div>
+            <div class="profile-image-container">
+                <img src="photo_2024-01-23_00-48-25.jpg" alt="Profile Image" class="profile-image">
+            </div>
+        </div>
+        
+    </section>
+    <section id="resume" class="hidden">
+        <h2>Resume</h2>
+        <p></p>
+        <a href="resume.png" download="resume.png" class="download-button">Download Resume</a>
+    </section>
+    <section id="portfolio" class="hidden">
+        <h2>Projects</h2>
+        <div class="portfolio-item proj">
+            <div class="pro">
+                <img src="project 1.jpeg" alt="Project 1">
+                <h3>NFT CARD GAME</h3>
+                <p>Experience the exciting world of NFT card gaming with our innovative platform. Explore unique and collectible digital cards, each with its own special abilities and attributes.</p>
+            </div>
+            <div class="pro">
+                <img src="project 2.jpeg" alt="Project 2">
+            <h3>EXPENSE TRACKER</h3>
+            <p>An expense tracker is a tool that records all your expenditures, providing a clear understanding of your budget. It helps control finances by identifying unnecessary spending. It’s useful for adjusting spending to suit changing needs.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contact" class="hidden">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <a href="mailto:hirthickt@gmail.com"><img src="e mail 2.png" alt="Gmail Logo"></a>
+            <a href="https://www.instagram.com/hirthick_2004"><img src="instagram.png" alt="Instagram Logo"></a>
+            <a href="https://api.whatsapp.com/send?phone=919566841008"><img src="whatsapp.png" alt="WhatsApp Logo"></a>
+        </div>
+    </section>
+</main>
+<script>
+    function showSection(sectionId) {
+        var sections = document.getElementsByTagName('section');
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].classList.add('hidden');
+        }
+        document.getElementById(sectionId).classList.remove('hidden');
+    }
+
+    setInterval(function() {
+        var fadeIns = document.getElementsByClassName('fade-in');
+        for (var i = 0; i < fadeIns.length; i++) {
+            fadeIns[i].classList.toggle('change-color');
+        }
+    }, 1000);
+</script>
+</body>
+</html>
+<section id="education" class="hidden">
+    <h2>Education</h2>
+    <div class="education-details">
+        <h3>Velammal matriculation higher secondary school</h3>
+        <p>SSLC</p>
+        <p>Completed in 2019</p>
+        <p>Aggregate: 66.2%</p>
+    </div>
+    <div class="education-details">
+        <h3>Velammal matriculation higher secondary school</h3>
+        <p>HSC</p>
+        <p>Completed in 2021</p>
+        <p>Aggregate: 74.056%</p>
+    </div>
+    <div class="education-details">
+        <h3>National Engineering College BE-Computer Science</h3>
+    </div>
+</section>
+<section id="certificate" class="hidden">
+    <h2>Certificate</h2>
+    <div class="certi">
+        <div class="cer">
+            <img src="NPTEL 1.jpg" alt="Certificate 1">
+        </div>
+        <div class="cer">
+            <img src="NPTEL 2.jpg" alt="Certificate 2">
+        </div>
+        <div class="cer">
+            <img src="ORACLE.jpg" alt="Certificate 3">
+        </div>
+    </div>
+</section>
